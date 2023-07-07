@@ -1,0 +1,859 @@
+html{
+    line-height: 1;
+}
+
+:root{
+    --main-color-blue: #3625b1;
+    --main-color-magento: #ba68d4;
+    --main-color-black: #36322f;
+    --main-color-gray: #b8b8b8;
+    --main-color-light-gray: #d3c9d4;
+    --main-color-white: #ffeeff;
+    --main-color-yellow: #fcc314;
+    --main-color-bg: #fdf2ff;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+/*=========== Public Variables End========= */
+
+/*Public Classes  */
+
+.container{
+    max-width: 100%;
+    padding: 0 calc((100% - 897px) / 2);
+}
+
+.small-text{
+    font-size: 0.8rem;
+    color: var(--main-color-light-gray);
+}
+
+.hidden {
+    display: none;
+}
+
+/*===========End Public Classes=========  */
+
+/* Start opening Section */
+
+.opening-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-image: linear-gradient(to right , var(--main-color-magento) , var(--main-color-blue));
+}
+
+.mobile-search-nav{
+    display: flex;
+    gap: 15px;
+}
+
+nav{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    color: var(--main-color-white);
+}
+
+nav a{
+    color: var(--main-color-white);
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+nav a:hover{
+    scale: 1.1;
+}
+
+.logo p{
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+input[type="search"]{
+    outline: none;
+    border: none;
+    padding: 5px;
+}
+
+.nav-bar{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.nav-bar li{
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.nav-bar li:hover{
+    scale: 1.1;
+}
+
+.nav-icons{
+    display: flex;
+    gap: 15px;
+}
+
+/* .nav-icons a, */
+.nav-icons i{
+    border: 1px solid var(--main-color-white);
+    border-radius: 50%;
+    padding: 7px;
+    transition: 0.3s ease;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.nav-icons i:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.shopping-icon{
+    position: relative;
+}
+
+#menu-btn{
+    display: none;
+}
+
+.shopping-number{
+    font-size: 0.9rem;
+    padding: 3px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    transform: translate(5px, -5px);
+    background-color: var(--main-color-magento);
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translate(5px, -5px);
+    -moz-transform: translate(5px, -5px);
+    -ms-transform: translate(5px, -5px);
+    -o-transform: translate(5px, -5px);
+}
+
+
+
+.landing-sec{
+    display: flex;
+}
+
+.product{
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    color: var(--main-color-white);
+    overflow: hidden;
+}
+
+.product img{
+    margin-bottom: -12%;
+}
+
+.product-description h2{
+    font-size: 3rem;
+}
+
+.arrow{
+    color: var(--main-color-white);
+    border: 1px solid var(--main-color-white);
+    border-radius: 50%;
+    padding: 5px;
+    position: absolute;
+    top: 50%;
+    z-index: 2;
+    transform: translate(-50%);
+    transition: 0.3s ease;
+    -webkit-transform: translate(-50%);
+    -moz-transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    -o-transform: translate(-50%);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.arrow:hover{
+    scale: 1.1;
+    cursor: pointer;
+}
+
+.arrow-right{
+    left: 95%;
+}
+
+.arrow-left{
+    left: 5%;
+}
+
+.buy-btn{
+    color: var(--main-color-white);
+    background-color: var(--main-color-yellow);
+    padding: 7px 0;
+    width: 70%;
+    border-radius: 20px;
+    border: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.buy-btn:active{
+    scale: 1.1;
+}
+
+/* ===========End opening Section========= */
+
+/* Landing Footer */
+
+.landing-sec-footer{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    height: calc(100vh - 558.9px);
+    background-color: var(--main-color-bg);
+}
+
+.landing-sec-footer div:nth-child(n){
+    display: flex;
+    align-items: start;
+    gap: 10px;
+}
+
+.landing-sec-footer div i{
+    font-size: 2rem;
+    color: var(--main-color-magento);
+}
+
+.landing-sec-footer div div{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+}
+
+.landing-sec-footer div div h3{
+    margin: 0;
+    align-self: start;
+}
+
+.landing-sec-footer div div p{
+    margin: 0;
+}
+/*========End Landing Footer========= */
+
+/* Start Products Gallery Section */
+
+.products-sec{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    text-align: center;
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.products-sec p:first-child{
+    color: var(--main-color-black);
+    font-weight: 600;
+}
+
+.products-sec > h3{
+    font-size: 1.5rem;
+}
+
+.products-sec > p:not(:first-child){
+    width: 50%;
+    line-height: 1.5;
+    align-self: center;
+}
+
+.products-show{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px 0 0;
+}
+
+.product-details{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 10px 10px;
+}
+
+.product-details img{
+    max-width: 160px;
+    height: auto;
+}
+
+.product-details p{
+    line-height: 1.5;
+}
+
+.new-sec{
+    background-color: var(--main-color-bg);
+}
+
+/* ===========End Products Gallery Section======== */
+
+/* Start multi-products */
+
+.multi-products{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;   
+    background-color: var(--main-color-bg);
+    padding-bottom: 1rem;
+}
+
+.multi-products > p,
+.multi-products > h2{
+    text-align: center;
+}
+
+.grid-gallery{
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas:
+    'lf tm tr'
+    'lf bt bt'
+    ;
+    gap: 1rem;
+}
+
+.grid-gallery > div{
+    background-color: #fff;
+    padding-left: 1rem;
+    overflow: hidden;
+}
+
+.left{
+    grid-area: lf; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.left button,
+.bottom button{
+    width: 50%;
+    padding: 0.3rem 0;
+    border: 1px solid var(--main-color-magento);
+    background-color: #fff;
+    cursor: pointer;
+    border-radius: 20px;
+    transition: 0.3s ease;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.left button:active,
+.bottom button:active{
+    scale: 1.1;
+}
+
+.left img{
+    width: 140%;
+    align-self: center;
+}
+
+.top-mid{ 
+    grid-area: tm; 
+    position: relative;
+    z-index: 1;
+}
+
+.top-mid img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    right: -35%;
+}
+
+
+
+.top-right{
+    grid-area: tr; 
+    position: relative;
+    z-index: 1;
+}
+
+.top-right img{
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: auto;
+    right: -50%;
+}
+
+.bottom{
+    grid-area: bt;
+    display: flex;
+
+}
+
+/*============= End multi-products============ */
+
+
+/* Start Best Seller Section */
+
+.best-seller{
+    display: flex;
+    flex-direction: column;
+}
+
+.best-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.best-header ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.best-header ul li{
+    transition: 0.3s ease;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.best-header ul li:hover{
+    color: var(--main-color-black);
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+.best-gallery{
+    display: flex;
+    margin: 3rem 0;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.best-gallery > div{
+    display: flex;
+    flex-direction: column;
+    box-shadow: 4px 4px 11px 0px rgba(0, 0, 0, 0.25);
+    flex-basis: 20%;
+    padding: 1rem;
+    border: none;
+}
+
+.best-gallery > div:hover{
+    transform: scale(1.05) translateZ(0);
+    -webkit-transform: scale(1.05) translateZ(0);
+    -moz-transform: scale(1.05) translateZ(0);
+    -ms-transform: scale(1.05) translateZ(0);
+    -o-transform: scale(1.05) translateZ(0);
+}
+
+/* .best-gallery:hover > div:not(:hover){
+    filter: brightness(1) blur(1px);
+}    */
+
+.best-gallery > div img{
+    max-height: 196px;
+    width: auto;
+}
+
+.best-gallery div a{
+    align-self: end;
+}
+
+.arrows-carsoul{
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    margin-bottom: 2rem;
+}
+
+.arrows-carsoul span i{
+    cursor: pointer;
+    color: var(--main-color-magento);
+    border: 1px solid var(--main-color-magento);
+    padding: 0.5rem;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.arrows-carsoul span i:hover{
+    scale: 1.03;
+}
+
+/*==========End Best Seller Section============== */
+
+
+/* Start show product section */
+
+.product-show{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: var(--main-color-bg);
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    justify-content: space-between;
+}
+
+.prod-name{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: end;
+}
+
+.product-img-descr{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.prod-img{
+    position: relative;
+    width: 50%;
+    height: auto;
+}
+
+.prod-img img{
+    width: 100%;
+    height: auto;
+}
+
+.discount{
+    position: absolute;
+    top: 15%;
+    right: 25%; 
+    z-index: 1;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: #fff;
+    background-color: var(--main-color-magento);
+    border: none;
+    border-radius: 50%;
+    padding: 0.5rem;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.product-img-descr > div:nth-child(2){
+    max-width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+    align-items: start;
+}
+
+.old-price{
+    text-decoration: line-through;
+}
+
+.quantity-no{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+.add-to-cart{
+    cursor: pointer;
+    color: #fff;
+    background-color: var(--main-color-magento);
+    border-radius: 1.5rem;
+    border: none;
+    padding: 0.7rem 1rem;
+    transition: 0.3s ease;
+    -webkit-border-radius: 1.5rem;
+    -moz-border-radius: 1.5rem;
+    -ms-border-radius: 1.5rem;
+    -o-border-radius: 1.5rem;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.add-to-cart:active{
+    scale: 1.1;
+}
+
+progress {
+    width: 100%;
+    height: 10px;
+    border: none;
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+progress::-webkit-progress-bar {
+    background-color: var(--main-color-light-gray);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+progress::-webkit-progress-value {
+    background-color: var(--main-color-magento);
+    border-radius: 10px;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+/*=========== End show product section============= */
+
+/* Start Contact Us */
+
+.only-overflow-circles{
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    background-image: linear-gradient(to top, var(--main-color-magento), var(--main-color-blue));
+    border-radius: 50%;
+    z-index: 1;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.circle-1{
+    width: 4rem;
+    height: 4rem;
+    top: -12%;
+    right: 30%;  
+}
+
+.circle-2{
+    width: 18rem;
+    height: 18rem;
+    top: 30%;
+    right: 20%;
+}
+
+.circle-3{
+    width: 10rem;
+    height: 10rem;
+    top: 80%;
+    right: 90%;
+}
+
+.contact-us{
+    width: 100%;
+    position: relative;
+    z-index: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: var(--main-color-blue);
+    color: #fff;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    overflow: hidden;
+}
+
+.contact-us > div{
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    position: relative;
+    z-index: 2;
+}
+
+.contact-us > div p{
+    line-height: 1.5;
+    }
+
+.contact-us form{
+    position: relative;
+    z-index: 2;
+    width: 60%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+
+.contact-us form input[type=email]{
+    width: 60%;
+    padding: 0.5rem;
+    border-radius: 10px;
+    border: none;
+    outline: none;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    -ms-border-radius: 10px;
+    -o-border-radius: 10px;
+}
+
+.contact-us form input[type=submit]{
+    color: #fff;
+    background-color: var(--main-color-yellow);
+    border: none;
+    border-radius: 20px;
+    padding: 0.5rem 1rem;
+    cursor: pointer;
+    transition: 0.3s ease;
+    -webkit-border-radius: 20px;
+    -moz-border-radius: 20px;
+    -ms-border-radius: 20px;
+    -o-border-radius: 20px;
+    -webkit-transition: 0.3s ease;
+    -moz-transition: 0.3s ease;
+    -ms-transition: 0.3s ease;
+    -o-transition: 0.3s ease;
+}
+
+.contact-us form input[type=submit]:hover{
+    scale: 1.1;
+}
+
+/*============== End Contact Us============== */
+
+/* Start Footer */
+
+footer{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+footer .footer-up{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.footer-menu{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+    flex-basis: 20%;
+}
+
+footer hr{
+    width: 150%;
+    position: relative;
+    left: -24%;
+}
+
+
+.copyright{
+    width: 100%;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 0.7rem;
+    padding-bottom: 0.7rem;
+}
+
+.footer-social i{
+    cursor: pointer;
+    color: var(--main-color-magento);
+    border: 1px solid var(--main-color-magento);
+    padding: 3px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+
+.footer-pay-method i{
+    cursor: pointer;
+    padding: 3px;
+    color: var(--main-color-light-gray);
+    border: 2px solid var(--main-color-light-gray);
+    border-radius: 10%;
+    -webkit-border-radius: 10%;
+    -moz-border-radius: 10%;
+    -ms-border-radius: 10%;
+    -o-border-radius: 10%;
+}
+
+/* ==============end Footer========== */
