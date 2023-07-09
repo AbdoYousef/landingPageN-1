@@ -342,6 +342,10 @@ input[type="search"]{
     line-height: 1.5;
 }
 
+.product-details a{
+    color: var(--main-color-black);
+}
+
 .new-sec{
     background-color: var(--main-color-bg);
 }
