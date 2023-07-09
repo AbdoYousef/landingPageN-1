@@ -525,6 +525,11 @@ input[type="search"]{
     align-self: end;
 }
 
+.shopping-icon i{
+    color: var(--main-color-magento);
+    cursor: pointer;
+}
+
 .arrows-carsoul{
     display: flex;
     gap: 2rem;
