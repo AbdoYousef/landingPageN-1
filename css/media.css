@@ -56,6 +56,11 @@
         margin: 2rem;
     }
 
+    .best-gallery > div img{
+        width: 50%;
+        margin: 0 auto;
+    }
+
     .product-show{
         padding: 3rem;
     }
